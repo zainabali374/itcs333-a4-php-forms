@@ -6,7 +6,6 @@ function validate_required(string $v): bool
     return trim($v) !== '';
 }
 
-
 function validate_email(string $v): bool
 {
     return preg_match('/^[A-Za-z0-9._%+\-]+@[A-Za-z0-9\-]+(\.[A-Za-z0-9\-]+)+$/', $v) === 1;
